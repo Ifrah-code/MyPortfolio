@@ -12,33 +12,33 @@ body {
   background-color: #000;
   color: #fff;
   line-height: 1.8;
-  font-size: 15px; /* ✅ Bigger base font */
+  font-size: 15px;
 }
 
 h1 {
-  font-size: 20px;   /* ~48px */
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 2rem; /* ~40px */
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 2rem;   /* ~32px */
+  font-size: 2rem;
   margin-bottom: 15px;
 }
 
 p {
-  font-size: 1.2rem; /* ~19px */
+  font-size: 1.2rem;
   color: #ddd;
   margin-bottom: 15px;
 }
 
 /* ============================= */
-/* Navbar                        */
+/* Navbar                       */
 /* ============================= */
 .navbar {
   position: fixed;
@@ -54,7 +54,7 @@ p {
 
 .navbar .logo-text {
   color: #fff;
-  font-size: 1.8rem; /* ✅ Bigger logo font */
+  font-size: 1.8rem;
 }
 
 .navbar .nav-links {
@@ -69,7 +69,7 @@ p {
 .navbar .nav-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem; /* ✅ Bigger nav links */
+  font-size: 1.2rem;
 }
 
 .navbar .nav-links a:hover {
@@ -77,7 +77,7 @@ p {
 }
 
 /* ============================= */
-/* Hero Section                  */
+/* Hero Section                 */
 /* ============================= */
 .hero-section {
   position: relative;
@@ -87,7 +87,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 120px 20px 50px; /* space for navbar */
+  padding: 120px 20px 50px;
   background: #000;
 }
 
@@ -118,11 +118,11 @@ p {
 }
 
 .hero-text-content h1 {
-  font-size: 3rem; /* ✅ Same as global h1 */
+  font-size: 3rem;
 }
 
 .hero-text-content .description {
-  font-size: 1.3rem; /* ✅ Larger description */
+  font-size: 1.3rem;
   color: #ccc;
 }
 
@@ -134,7 +134,7 @@ p {
 .hero-image-content .main-image {
   width: 320px;
   border: 4px solid #00ffcc;
-  border-radius: 0; /* stays square */
+  border-radius: 0;
 }
 
 .copyright {
@@ -142,14 +142,14 @@ p {
   font-size: 1rem;
   color: #aaa;
 }
-/* ============================= */
-/* About Page CSS                */
-/* ============================= */
 
+/* ============================= */
+/* About Page CSS               */
+/* ============================= */
 .about-container {
   background-color: #0a0a0a;
   color: #ffffff;
-  text-align: center;      /* Center everything */
+  text-align: center;
   padding: 80px 20px;
   min-height: 100vh;
   display: flex;
@@ -158,7 +158,6 @@ p {
   gap: 40px;
 }
 
-/* Heading */
 .about-container h1 {
   color: #ffffff;
   font-size: 2rem;
@@ -166,21 +165,20 @@ p {
   margin-bottom: 30px;
 }
 
-/* Paragraph */
 .about-container p {
   font-size: 1.2rem;
   line-height: 1.7;
   max-width: 800px;
   color: #ffffff;
-  margin-bottom: 0; /* paragraphs in skills grid are separate */
+  margin-bottom: 0;
 }
 
 /* Skills Grid */
 .skills-grid {
   display: flex;
-  flex-wrap: wrap;          /* Wrap on smaller screens */
-  justify-content: center;  /* Center all skills horizontally */
-  gap: 12px;                /* Space between skills */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
   margin-top: 20px;
 }
 
@@ -202,37 +200,13 @@ p {
   color: #00ffcc;
 }
 
-/* Hover effect for skills */
 .skills-grid p:hover {
   transform: scale(1.05);
   background-color: #333;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about-container {
-    padding: 60px 16px;
-    gap: 30px;
-  }
-
-  .about-container h1 {
-    font-size: 2.2rem;
-  }
-
-  .about-container p {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-
-  .skills-grid p {
-    font-size: 0.95rem;
-    padding: 8px 12px;
-  }
-}
-
-
 /* ============================= */
-/* Projects Section              */
+/* Projects Section             */
 /* ============================= */
 .projects-section {
   padding: 130px 60px 90px;
@@ -295,7 +269,7 @@ p {
 }
 
 /* ============================= */
-/* Contact Section               */
+/* Contact Section              */
 /* ============================= */
 .contact-section {
   padding: 130px 60px 90px;
@@ -323,7 +297,7 @@ p {
   padding: 12px;
   border: none;
   border-radius: 6px;
-  font-size: 1.1rem; /* ✅ Bigger inputs */
+  font-size: 1.1rem;
 }
 
 .contact-btn {
@@ -350,17 +324,171 @@ p {
   text-decoration: none;
   font-size: 1.3rem;
 }
-/* Push particles behind everything */
+
 #tsparticles {
-  position: absolute !important;
-  z-index: 0 !important;
+  position: absolute;
+  z-index: 0;
 }
 
-/* Bring your hero content + icons above particles */
 .hero-content-container,
 .social-links-left,
 .social-links-left a,
 .hero-text-content {
   position: relative !important;
   z-index: 10 !important;
+}
+
+/* ============================= */
+/* Responsive adjustments       */
+/* ============================= */
+
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero-content-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .hero-text-content,
+  .hero-image-content {
+    text-align: center !important;
+    flex: unset;
+  }
+
+  .hero-image-content .main-image {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .projects-container {
+    gap: 30px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .project-details {
+    text-align: center;
+  }
+
+  .contact-section {
+    padding: 90px 20px 60px;
+  }
+
+  .contact-form {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (max-width: 425px) */
+@media (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .navbar .nav-links a {
+    font-size: 1rem;
+  }
+
+  .hero-section {
+    padding: 80px 15px 40px;
+  }
+
+  .hero-text-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text-content .description {
+    font-size: 1rem;
+  }
+
+  .hero-image-content .main-image {
+    max-width: 200px;
+  }
+
+  .projects-section {
+    padding: 90px 20px 60px;
+  }
+
+  .project-item {
+    padding: 15px;
+  }
+
+  .project-image img {
+    max-width: 200px;
+  }
 }
