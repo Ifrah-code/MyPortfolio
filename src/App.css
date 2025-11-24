@@ -1,5 +1,5 @@
 /* ============================= */
-/* General Reset + Base Styles   */
+/* Global Reset                  */
 /* ============================= */
 * {
   margin: 0;
@@ -9,215 +9,128 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #000;
+  background: #000;
   color: #fff;
   line-height: 1.8;
-  font-size: 15px;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-p {
-  font-size: 1.2rem;
-  color: #ddd;
+h1, h2, h3, p {
   margin-bottom: 15px;
 }
 
 /* ============================= */
-/* Navbar                       */
+/* Navbar                        */
 /* ============================= */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  padding: 18px 35px;
+  padding: 18px 50px;
+  background: rgba(0,0,0,0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
 }
 
-.navbar .logo-text {
-  color: #fff;
-  font-size: 1.8rem;
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
-.navbar .nav-links {
+.nav-links {
   display: flex;
-  list-style: none;
+  gap: 30px;
 }
 
-.navbar .nav-links li {
-  margin-left: 25px;
-}
-
-.navbar .nav-links a {
-  color: #fff;
+.nav-links a {
+  color: white;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.navbar .nav-links a:hover {
+.nav-links a:hover {
   color: #00ffcc;
 }
 
 /* ============================= */
-/* Hero Section                 */
+/* Hero Section                  */
 /* ============================= */
 .hero-section {
-  position: relative;
   height: 100vh;
+  padding-top: 130px;
+  padding-inline: 20px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 120px 20px 50px;
-  background: #000;
-}
-
-.hero-background-image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0.15;
-  z-index: 0;
-}
-
-.hero-content-container {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-  max-width: 1100px;
-  margin: 0 auto;
-  z-index: 1;
-}
-
-.hero-text-content {
-  flex: 1;
   text-align: left;
 }
 
-.hero-text-content h1 {
-  font-size: 3rem;
+.hero-content-container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
 }
 
-.hero-text-content .description {
-  font-size: 1.3rem;
+.hero-text-content h1 {
+  font-size: 3.2rem;
+}
+
+.hero-text-content p {
+  font-size: 1.2rem;
   color: #ccc;
 }
 
-.hero-image-content {
-  flex: 1;
-  text-align: right;
-}
-
 .hero-image-content .main-image {
-  width: 320px;
+  width: 340px;
   border: 4px solid #00ffcc;
-  border-radius: 0;
-}
-
-.copyright {
-  margin-top: 25px;
-  font-size: 1rem;
-  color: #aaa;
 }
 
 /* ============================= */
-/* About Page CSS               */
+/* About Section                 */
 /* ============================= */
 .about-container {
-  background-color: #0a0a0a;
-  color: #ffffff;
-  text-align: center;
-  padding: 80px 20px;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
-
-.about-container h1 {
-  color: #ffffff;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 30px;
+  padding: 120px 20px 60px;
+  text-align: center;
+  background: #0a0a0a;
 }
 
 .about-container p {
-  font-size: 1.2rem;
-  line-height: 1.7;
-  max-width: 800px;
-  color: #ffffff;
-  margin-bottom: 0;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* Skills Grid */
 .skills-grid {
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
+  gap: 15px;
 }
 
 .skills-grid p {
+  padding: 12px 18px;
+  background: #222;
+  border-radius: 10px;
+  border: 1px solid #333;
   display: flex;
   align-items: center;
   gap: 8px;
-  background-color: #222;
-  color: #ffffff;
-  padding: 10px 16px;
-  border-radius: 8px;
-  border: 1px solid #333;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-  white-space: nowrap;
-  cursor: default;
-}
-
-.skills-grid p svg {
-  color: #00ffcc;
-}
-
-.skills-grid p:hover {
-  transform: scale(1.05);
-  background-color: #333;
 }
 
 /* ============================= */
-/* Projects Section             */
+/* Projects Section              */
 /* ============================= */
 .projects-section {
-  padding: 130px 60px 90px;
+  padding: 120px 40px;
+  min-height: 100vh;
   background: #000;
   text-align: center;
-  min-height: 100vh;
-}
-
-.projects-section h2 {
-  font-size: 2rem;
-  margin-bottom: 50px;
 }
 
 .projects-container {
@@ -229,7 +142,6 @@ p {
 .project-item {
   display: flex;
   gap: 40px;
-  align-items: flex-start;
   background: #111;
   padding: 25px;
   border-radius: 10px;
@@ -237,8 +149,7 @@ p {
 
 .project-image img {
   width: 300px;
-  border-radius: 8px;
-  border: 3px solid #00ffcc;
+  border-radius: 10px;
 }
 
 .project-details {
@@ -246,242 +157,155 @@ p {
   flex: 1;
 }
 
-.project-details p {
-  font-size: 1.2rem;
-  margin: 12px 0;
-}
-
-.project-details ul {
-  margin: 12px 0;
-  padding-left: 22px;
-  font-size: 1.1rem;
-}
-
-.project-details a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.project-details a:hover {
-  text-decoration: underline;
-}
-
 /* ============================= */
-/* Contact Section              */
+/* Contact Section               */
 /* ============================= */
 .contact-section {
-  padding: 130px 60px 90px;
-  background: #111;
-  text-align: center;
+  padding: 120px 40px;
   min-height: 100vh;
 }
 
-.contact-section h2 {
-  font-size: 2.8rem;
-}
-
 .contact-form {
-  max-width: 550px;
-  margin: 25px auto;
+  max-width: 500px;
+  margin: auto;
 }
 
 .form-group {
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 12px;
-  border: none;
   border-radius: 6px;
-  font-size: 1.1rem;
+  border: none;
 }
 
 .contact-btn {
   background: #00ffcc;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 12px 20px;
   font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.contact-btn:hover {
-  background: #00cca3;
-}
-
-.contact-socials {
-  margin-top: 25px;
-}
-
-.contact-socials a {
-  margin: 0 12px;
-  color: #00ffcc;
-  text-decoration: none;
-  font-size: 1.3rem;
-}
-
-#tsparticles {
-  position: absolute;
-  z-index: 0;
-}
-
-.hero-content-container,
-.social-links-left,
-.social-links-left a,
-.hero-text-content {
-  position: relative !important;
-  z-index: 10 !important;
+  width: 100%;
+  border-radius: 6px;
 }
 
 /* ============================= */
-/* Responsive adjustments       */
+/* RESPONSIVE BREAKPOINTS        */
 /* ============================= */
 
-/* Tablet (max-width: 768px) */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px;
+/* ------------ 1440px ------------ */
+@media (max-width: 1440px) {
+  .hero-text-content h1 {
+    font-size: 2.8rem;
   }
+  .hero-image-content .main-image {
+    width: 300px;
+  }
+  .navbar {
+    padding: 18px 40px;
+  }
+}
 
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
+/* ------------ 1024px ------------ */
+@media (max-width: 1024px) {
 
   .navbar {
-    padding: 12px 20px;
+    padding: 15px 30px;
   }
 
-  .navbar .nav-links {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar .nav-links li {
-    margin-left: 0;
-    margin-bottom: 10px;
+  .nav-links {
+    gap: 20px;
   }
 
   .hero-content-container {
     flex-direction: column;
-    gap: 20px;
-    padding: 0 10px;
+    text-align: center;
   }
 
-  .hero-text-content,
-  .hero-image-content {
-    text-align: center !important;
-    flex: unset;
+  .hero-text-content h1 {
+    font-size: 2.4rem;
   }
 
   .hero-image-content .main-image {
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
-  }
-
-  .projects-container {
-    gap: 30px;
+    width: 260px;
   }
 
   .project-item {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .project-image img {
-    width: 100%;
-    max-width: 250px;
-    margin-bottom: 15px;
-  }
-
-  .project-details {
     text-align: center;
   }
 
-  .contact-section {
-    padding: 90px 20px 60px;
+  .project-image img {
+    margin: auto;
+    width: 250px;
   }
 
-  .contact-form {
-    width: 100%;
-    padding: 0 10px;
-  }
-
-  .contact-btn {
-    width: 100%;
-    font-size: 1rem;
-  }
 }
 
-/* Mobile (max-width: 425px) */
-@media (max-width: 425px) {
+/* ------------ 768px (tablets) ------------ */
+@media (max-width: 768px) {
+
   body {
-    font-size: 13px;
-  }
-
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  p {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .navbar {
-    padding: 10px 15px;
+    padding: 15px 20px;
   }
 
-  .navbar .logo-text {
-    font-size: 1.5rem;
-  }
-
-  .navbar .nav-links a {
+  .nav-links a {
     font-size: 1rem;
-  }
-
-  .hero-section {
-    padding: 80px 15px 40px;
   }
 
   .hero-text-content h1 {
     font-size: 2rem;
   }
 
-  .hero-text-content .description {
-    font-size: 1rem;
+  .hero-image-content .main-image {
+    width: 220px;
+  }
+
+}
+
+/* ------------ 600px ------------ */
+@media (max-width: 600px) {
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .navbar .logo-text {
+    font-size: 1.6rem;
+  }
+
+  .hero-text-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-section {
+    padding-top: 110px;
+  }
+
+}
+
+/* ------------ 425px (mobile) ------------ */
+@media (max-width: 425px) {
+
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hero-text-content h1 {
+    font-size: 1.6rem;
   }
 
   .hero-image-content .main-image {
-    max-width: 200px;
-  }
-
-  .projects-section {
-    padding: 90px 20px 60px;
+    width: 180px;
   }
 
   .project-item {
@@ -489,6 +313,31 @@ p {
   }
 
   .project-image img {
-    max-width: 200px;
+    width: 190px;
+  }
+
+}
+
+/* ------------ 375px (small phones) ------------ */
+@media (max-width: 375px) {
+
+  .logo-text {
+    font-size: 1.4rem;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  .hero-text-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-image-content .main-image {
+    width: 160px;
   }
 }
