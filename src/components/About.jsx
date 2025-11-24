@@ -1,40 +1,60 @@
 import React from "react";
+import {
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiJquery,
+  SiBootstrap,
+  SiSpringboot,
+  SiSpringsecurity,
+  SiHibernate,
+  SiMysql,
+  SiPostman,
+  SiNetlify,
+  SiRender,
+  SiEclipseide,
+  SiGithub,
+  SiGit,
+} from "react-icons/si";
+import { DiJava } from "react-icons/di";      // Java icon
+import { VscVscode } from "react-icons/vsc";  // VS Code icon
 
 const About = () => {
   return (
+   
     <div className="about-container">
-      {/* Left Side - About Content */}
-      <div className="about-content">
-        <h1>About Me</h1>
+     
+      {/* About Text */}
+      <div className="about-content"><br></br>
+          <h1>WHO AM I ?</h1>
         <p>
-          I am a passionate Full Stack Developer with a strong foundation in Java, Spring Boot, React, and MySQL. 
-I enjoy building dynamic, user-friendly, and scalable applications that solve real-world problems. 
-During my projects, I have worked extensively on backend services, database management, and frontend design, 
-with additional experience integrating external APIs and implementing client-side validations. 
-My goal is to continuously learn and enhance my skills while contributing to impactful software solutions 
-that blend efficiency with great user experience.
-
+         As a Full Stack Developer, I'm passionate about designing and implementing robust web applications using my knowledge of backend technologies and modern frontend frameworks. My focus is on creating efficient, maintainable, and responsive solutions that solve real-world problems. I thrive in collaborative environments and continuously seek opportunities to expand my skills and contribute to impactful projects.
         </p>
       </div>
 
-      {/* Right Side - Skills */}
+      {/* Skills Section */}
       <div className="skills-content">
-        <h2>My Skills</h2>
-        <ul>
-          <li>Java</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Javascript</li>
-          <li>Bootstrap</li>
-          <li>React.JS</li>
-          <li>React Router</li>
-          <li>MySQL</li>
-          <li>REST API Development</li>
-          <li>SpringBoot</li>
-          <li>Github</li>
-          <li>Hibernate</li>
-          <li>Postman</li>
-        </ul>
+        <h2>MY SKILLS</h2>
+        <div className="skills-grid">
+          <p><SiHtml5 size={24}/> HTML5</p>
+          <p><SiCss3 size={24}/> CSS3</p>
+          <p><SiReact size={24}/> React.js</p>
+          <p><SiJquery size={24}/> jQuery</p>
+          <p><SiBootstrap size={24}/> Bootstrap</p>
+          <p><DiJava size={26}/> Java</p>
+          <p>Advanced Java</p>
+          <p><SiSpringboot size={24}/> Spring Boot</p>
+          <p><SiSpringsecurity size={24}/> Spring Security</p>
+          <p><SiHibernate size={24}/> Hibernate / JPA</p>
+          <p><SiMysql size={24}/> MySQL</p>
+          <p><SiPostman size={24}/> Postman</p>
+          <p><SiNetlify size={24}/> Netlify</p>
+          <p><SiRender size={24}/> Render</p>
+          <p><VscVscode size={24}/> VS Code</p>
+          <p><SiEclipseide size={24}/> Eclipse</p>
+          <p><SiGithub size={24}/> GitHub</p>
+          <p><SiGit size={24}/> Git</p>
+        </div>
       </div>
     </div>
   );

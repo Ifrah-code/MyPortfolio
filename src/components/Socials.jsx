@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Socials() {
   return (
@@ -14,11 +14,11 @@ export default function Socials() {
         zIndex: 10,
       }}
     >
-      <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">
+      <a href="https://github.com/Ifrah-code" target="_blank" rel="noreferrer">
         <FaGithub size={30} color="white" />
       </a>
      
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">
+      <a href="https://linkedin.com/in/ifrahs" target="_blank" rel="noreferrer">
         <FaLinkedin size={30} color="white" />
       </a>
     </div>

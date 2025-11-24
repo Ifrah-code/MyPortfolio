@@ -4,6 +4,8 @@ import Particles from 'react-tsparticles';
 import { loadSlim } from 'tsparticles-slim';
 import developerImage from '../assests/developer.jpeg';
 
+
+
 const Hero = () => {
   const particlesInit = (engine) => {
     loadSlim(engine);
@@ -90,19 +92,26 @@ const Hero = () => {
       <div className="hero-content-container">
         <div className="hero-text-content">
           <div className="social-links-left">
-            <a href="https://github.com/Ifrah-code" target="_blank" rel="noopener noreferrer">
-              {/* Replace this placeholder with your actual GitHub icon (e.g., <FaGithub /> if using react-icons, or <img src="/path/to/github.svg" alt="GitHub" />) */}
-              {/* <img src="https://via.placeholder.com/32/ffffff/000000?text=GH" alt="GitHub icon" /> */}
-            </a>
-            <a href="https://www.linkedin.com/in/ifrahs?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
-              {/* Replace this placeholder with your actual LinkedIn icon (e.g., <FaLinkedinIn /> if using react-icons, or <img src="/path/to/linkedin.svg" alt="LinkedIn" />) */}
-              {/* <img src="https://via.placeholder.com/32/ffffff/000000?text=LI" alt="LinkedIn icon" /> */}
-            </a>
+            <a 
+    href="https://github.com/Ifrah-code" 
+    target="_blank" 
+     rel="noopener noreferrer"
+  > 
+  </a>
+
+  <a 
+    href="https://www.linkedin.com/in/ifrahs" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+
+  </a>
           </div>
           <div className="intro-text">
-            <h1>HELLO, I'M IFRAH SHAIKH</h1>
+            <h1>HELLO I AM IFRAH SHAIKH , BUILDING APPLICATIONS  PIXEL BY PIXEL</h1>
             <p className="description">
-               A Dedicated Full Stack Developer committed to building powerful, user-centric applications,  responsible for both the UI and the backbone of an application.
+              
+               As Full Stack Developer I'm committed to building powerful, user-centric applications,  passionate for both the UI and the backbone of an application.
             </p>
           </div>
         </div>
@@ -110,14 +119,14 @@ const Hero = () => {
         <div className="hero-image-content">
           <img
             src={developerImage}
-            alt="Saif Sayyed"
+            alt="Ifrah Shaikh"
             className="main-image"
           />
         </div>
       </div>
 
       <div className="copyright">
-        © 2024 My Portfolio. All rights reserved.
+        © 2025 My Portfolio. All rights reserved.
       </div>
     </section>
   );

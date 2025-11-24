@@ -16,13 +16,13 @@ body {
 }
 
 h1 {
-  font-size: 3rem;   /* ~48px */
+  font-size: 20px;   /* ~48px */
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 h2 {
-  font-size: 2.5rem; /* ~40px */
+  font-size: 2rem; /* ~40px */
   margin-bottom: 20px;
 }
 
@@ -142,43 +142,94 @@ p {
   font-size: 1rem;
   color: #aaa;
 }
+/* ============================= */
+/* About Page CSS                */
+/* ============================= */
 
-/* ============================= */
-/* About Section                 */
-/* ============================= */
 .about-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 130px 60px 90px;
-  gap: 60px;
-  background: #111;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  text-align: center;      /* Center everything */
+  padding: 80px 20px;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
 }
 
-.about-content {
-  flex: 2;
+/* Heading */
+.about-container h1 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
-.about-content h1 {
-  font-size: 2.8rem;
+/* Paragraph */
+.about-container p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 800px;
+  color: #ffffff;
+  margin-bottom: 0; /* paragraphs in skills grid are separate */
 }
 
-.skills-content {
-  flex: 1;
+/* Skills Grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;          /* Wrap on smaller screens */
+  justify-content: center;  /* Center all skills horizontally */
+  gap: 12px;                /* Space between skills */
+  margin-top: 20px;
 }
 
-.skills-content ul {
-  list-style: none;
+.skills-grid p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #222;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  white-space: nowrap;
+  cursor: default;
 }
 
-.skills-content li {
-  background: #222;
-  margin: 10px 0;
-  padding: 10px 15px;
-  border-radius: 6px;
-  font-size: 1.2rem; /* ✅ Bigger list text */
+.skills-grid p svg {
+  color: #00ffcc;
 }
+
+/* Hover effect for skills */
+.skills-grid p:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 60px 16px;
+    gap: 30px;
+  }
+
+  .about-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .skills-grid p {
+    font-size: 0.95rem;
+    padding: 8px 12px;
+  }
+}
+
 
 /* ============================= */
 /* Projects Section              */
@@ -191,7 +242,7 @@ p {
 }
 
 .projects-section h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin-bottom: 50px;
 }
 
@@ -298,4 +349,18 @@ p {
   color: #00ffcc;
   text-decoration: none;
   font-size: 1.3rem;
+}
+/* Push particles behind everything */
+#tsparticles {
+  position: absolute !important;
+  z-index: 0 !important;
+}
+
+/* Bring your hero content + icons above particles */
+.hero-content-container,
+.social-links-left,
+.social-links-left a,
+.hero-text-content {
+  position: relative !important;
+  z-index: 10 !important;
 }
