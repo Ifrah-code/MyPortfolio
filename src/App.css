@@ -1,5 +1,5 @@
 /* ============================= */
-/* Global Reset                  */
+/* RESET + BASE */
 /* ============================= */
 * {
   margin: 0;
@@ -11,167 +11,192 @@ body {
   font-family: Arial, sans-serif;
   background: #000;
   color: #fff;
-  line-height: 1.8;
-  font-size: 16px;
-  overflow-x: hidden;
+  line-height: 1.7;
 }
 
+/* Global Typography Scaling */
 h1, h2, h3, p {
-  margin-bottom: 15px;
+  transition: 0.3s ease;
 }
 
 /* ============================= */
-/* Navbar                        */
+/* NAVBAR */
 /* ============================= */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 18px 50px;
-  background: rgba(0,0,0,0.9);
+  background: rgba(0, 0, 0, 0.9);
+  padding: 18px 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
+  z-index: 2000;
 }
 
-.logo-text {
-  font-size: 2rem;
+.navbar .logo-text {
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
-.nav-links {
+.navbar .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 25px;
 }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
+.navbar .nav-links a {
+  color: #fff;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
+.navbar .nav-links a:hover {
   color: #00ffcc;
 }
 
 /* ============================= */
-/* Hero Section                  */
+/* HERO */
 /* ============================= */
 .hero-section {
   height: 100vh;
-  padding-top: 130px;
-  padding-inline: 20px;
+  padding-top: 120px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: left;
+  align-items: center;
+  position: relative;
+  text-align: center;
 }
 
 .hero-content-container {
-  max-width: 1300px;
+  max-width: 1100px;
   width: 100%;
+  padding: 0 20px;
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
   align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero-text-content {
+  flex: 1;
+  text-align: left;
 }
 
 .hero-text-content h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
-.hero-text-content p {
-  font-size: 1.2rem;
+.hero-text-content .description {
+  margin-top: 12px;
+  font-size: 1.3rem;
   color: #ccc;
 }
 
+/* SOCIAL ICONS (Left) */
+.social-links-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: absolute;
+  left: 20px;
+  top: 45%;
+  z-index: 20;
+}
+
+.social-links-left a {
+  color: #00ffcc;
+  font-size: 1.5rem;
+}
+
+/* IMAGE */
+.hero-image-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .hero-image-content .main-image {
-  width: 340px;
+  width: 320px;
   border: 4px solid #00ffcc;
 }
 
 /* ============================= */
-/* About Section                 */
+/* ABOUT */
 /* ============================= */
 .about-container {
-  min-height: 100vh;
-  padding: 120px 20px 60px;
+  padding: 80px 20px;
   text-align: center;
-  background: #0a0a0a;
+}
+
+.about-container h1 {
+  font-size: 2.2rem;
 }
 
 .about-container p {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
+  font-size: 1.2rem;
 }
 
+/* Skills */
 .skills-grid {
-  margin-top: 30px;
+  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .skills-grid p {
-  padding: 12px 18px;
   background: #222;
-  border-radius: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
   border: 1px solid #333;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 1rem;
 }
 
 /* ============================= */
-/* Projects Section              */
+/* PROJECTS */
 /* ============================= */
 .projects-section {
-  padding: 120px 40px;
-  min-height: 100vh;
-  background: #000;
+  padding: 130px 40px 100px;
   text-align: center;
 }
 
 .projects-container {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
 }
 
 .project-item {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   background: #111;
-  padding: 25px;
+  padding: 20px;
   border-radius: 10px;
 }
 
 .project-image img {
   width: 300px;
+  border: 3px solid #00ffcc;
   border-radius: 10px;
 }
 
-.project-details {
-  text-align: left;
-  flex: 1;
-}
-
 /* ============================= */
-/* Contact Section               */
+/* CONTACT */
 /* ============================= */
 .contact-section {
   padding: 120px 40px;
-  min-height: 100vh;
+  text-align: center;
 }
 
 .contact-form {
-  max-width: 500px;
+  max-width: 550px;
   margin: auto;
-}
-
-.form-group {
-  margin-bottom: 15px;
 }
 
 .form-group input,
@@ -182,162 +207,141 @@ h1, h2, h3, p {
   border: none;
 }
 
-.contact-btn {
-  background: #00ffcc;
-  padding: 12px 20px;
-  font-weight: bold;
-  width: 100%;
-  border-radius: 6px;
-}
-
 /* ============================= */
-/* RESPONSIVE BREAKPOINTS        */
+/* RESPONSIVE */
 /* ============================= */
 
-/* ------------ 1440px ------------ */
+/* ------- LAPTOP 1440px ------- */
 @media (max-width: 1440px) {
   .hero-text-content h1 {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
-  .hero-image-content .main-image {
-    width: 300px;
-  }
-  .navbar {
-    padding: 18px 40px;
+  .hero-text-content .description {
+    font-size: 1.2rem;
   }
 }
 
-/* ------------ 1024px ------------ */
+/* ------- TABLET 1024px ------- */
 @media (max-width: 1024px) {
-
-  .navbar {
-    padding: 15px 30px;
-  }
-
-  .nav-links {
-    gap: 20px;
-  }
 
   .hero-content-container {
     flex-direction: column;
     text-align: center;
+    gap: 20px;
+  }
+
+  .hero-text-content {
+    text-align: center;
   }
 
   .hero-text-content h1 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+  }
+
+  .hero-text-content .description {
+    font-size: 1.1rem;
+  }
+
+  .social-links-left {
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    margin-bottom: 10px;
   }
 
   .hero-image-content .main-image {
     width: 260px;
   }
-
-  .project-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .project-image img {
-    margin: auto;
-    width: 250px;
-  }
-
 }
 
-/* ------------ 768px (tablets) ------------ */
+/* ---------- TABLET 768px ----------- */
 @media (max-width: 768px) {
 
-  body {
-    font-size: 14px;
-  }
-
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .nav-links a {
-    font-size: 1rem;
-  }
-
   .hero-text-content h1 {
-    font-size: 2rem;
+    font-size: 1.9rem;
+  }
+
+  .hero-text-content .description {
+    font-size: 1rem;
   }
 
   .hero-image-content .main-image {
     width: 220px;
   }
 
+  .project-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 230px;
+    margin: auto;
+  }
+
+  .skills-grid p {
+    font-size: 0.9rem;
+  }
 }
 
-/* ------------ 600px ------------ */
+/* -------- MOBILE 600px ---------- */
 @media (max-width: 600px) {
 
-  .nav-links {
-    gap: 12px;
-  }
-
-  .navbar .logo-text {
-    font-size: 1.6rem;
-  }
-
   .hero-text-content h1 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
-  .hero-section {
-    padding-top: 110px;
-  }
-
-}
-
-/* ------------ 425px (mobile) ------------ */
-@media (max-width: 425px) {
-
-  .navbar {
-    padding: 12px 15px;
-  }
-
-  .nav-links a {
+  .hero-text-content .description {
     font-size: 0.9rem;
   }
 
+  .hero-image-content .main-image {
+    width: 200px;
+  }
+}
+
+/* -------- MOBILE 425px ---------- */
+@media (max-width: 425px) {
+
+  .navbar .logo-text {
+    font-size: 1.5rem;
+  }
+
   .hero-text-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .hero-text-content .description {
+    font-size: 0.85rem;
   }
 
   .hero-image-content .main-image {
     width: 180px;
   }
 
-  .project-item {
-    padding: 15px;
+  .social-links-left a {
+    font-size: 1.3rem;
   }
-
-  .project-image img {
-    width: 190px;
-  }
-
 }
 
-/* ------------ 375px (small phones) ------------ */
+/* ------- SMALL MOBILE 375px ------- */
 @media (max-width: 375px) {
 
-  .logo-text {
-    font-size: 1.4rem;
+  .hero-text-content h1 {
+    font-size: 1.3rem;
   }
 
-  .nav-links {
-    gap: 8px;
-  }
-
-  .nav-links a {
+  .hero-text-content .description {
     font-size: 0.8rem;
   }
 
-  .hero-text-content h1 {
-    font-size: 1.4rem;
+  .hero-image-content .main-image {
+    width: 165px;
   }
 
-  .hero-image-content .main-image {
-    width: 160px;
+  .skills-grid p {
+    font-size: 0.8rem;
   }
 }
