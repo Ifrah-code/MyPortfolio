@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 
->>>>>>> 6a9e96d (Fix merge conflicts and add responsive styles)
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
