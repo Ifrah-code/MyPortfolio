@@ -112,7 +112,7 @@ const Hero = () => {
             <h1>HELLO I AM IFRAH SHAIKH , BUILDING APPLICATIONS  PIXEL BY PIXEL</h1>
             <p className="description">
               
-               As Full Stack Developer I'm committed to building powerful, user-centric applications,  passionate for both the UI and the backbone of an application.
+               As a Full Stack Developer I'm committed to building powerful, user-centric applications,  passionate for both the UI and the backbone of an application.
             </p>
           </div>
         </div>
