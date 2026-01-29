@@ -109,10 +109,10 @@ const Hero = () => {
   </a>
           </div>
           <div className="intro-text">
-            <h1>HELLO I AM IFRAH SHAIKH , BUILDING APPLICATIONS  PIXEL BY PIXEL</h1>
+            <h1>Hi , Iam Ifrah, Full Stack Developer Building Digital Experiences</h1>
             <p className="description">
               
-               As a Full Stack Developer I'm committed to building powerful, user-centric applications,  passionate for both the UI and the backbone of an application.
+              Passionate developer specialized in building digital experiences . I create seamless, user-centric applications with modern technologies,focusing on both elegant frontends and robust backend architecture
             </p>
           </div>
         </div>
