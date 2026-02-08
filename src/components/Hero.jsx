@@ -109,10 +109,10 @@ const Hero = () => {
   </a>
           </div>
           <div className="intro-text">
-            <h1>Hi , Iam Ifrah, Full Stack Developer Building Digital Experiences</h1>
+            <h1>Hi , Iam Ifrah, A Software Developer Building Digital Experiences</h1>
             <p className="description">
               
-              Passionate developer specialized in building digital experiences . I create seamless, user-centric applications with modern technologies,focusing on both elegant frontends and robust backend architecture
+              Passionate developer specialized in building digital experiences . I create seamless, user-centric applications with modern technologies focusing on elegant frontends  robust backend architecture and  the ability to work across different database systems.
             </p>
           </div>
         </div>
@@ -127,7 +127,7 @@ const Hero = () => {
       </div>
 
       <div className="copyright">
-        © 2025 My Portfolio. All rights reserved.
+        © 2025 My Portfolio
       </div>
     </section>
   );

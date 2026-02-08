@@ -13,7 +13,7 @@ function App() {
   return (
     <>
     
-      <Navbar />   {/* ✅ Always visible */}
+      <Navbar />   
 
       <Routes>
         <Route path="/" element={<Hero />} />
@@ -22,7 +22,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      <Socials />  {/* ✅ Always visible */}
+      <Socials />  
     </>
   );
 }

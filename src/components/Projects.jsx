@@ -21,9 +21,9 @@ const projects = [
   
 
   {
-    title: "School Management System",
+    title: "EduCore",
     description:
-      `"School Management System" efficiently handles student and admin operations.`,
+      `"EduCore" efficiently handles student and admin operations , with line location tracked.`,
     stack: [
       "Designed dynamic user interfaces and implemented DOM-level validation using Thymeleaf integrated with JavaScript.",
       "Spring Boot -  Developed secure REST APIs and MVC architecture in Spring Boot to manage student and admin functionalities.",
