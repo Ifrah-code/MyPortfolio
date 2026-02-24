@@ -29,7 +29,7 @@ const About = () => {
         <br></br>
         <h1>WHO AM I ?</h1>
         <p>
-          Full Stack Developer who enjoys building things that actually get
+          AI Full Stack Developer who enjoys building things that actually get
           used. I specialize in creating responsive frontends by
           reliable, well-architected backend systems. With a strong focus on
           clean code, scalability, and real-world problem solving, I collaborate
